@@ -1,11 +1,11 @@
-About dlint
-===========
+About dlint-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dlint-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dlint-py/dlint
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dlint-feedstock/blob/main/LICENSE.txt)
 
 Summary: Flake8 expention for encouraging best and secure coding practices.
 
