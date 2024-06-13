@@ -1,5 +1,5 @@
 {% set name = "dlint" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dlint-py/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 32d3c68819227d6fb359cd8e63a19ca3f36893fa9d0db95b21a3e7c66f5d3228
+  sha256: a3d756bd98fef8c23c0eb46c393bf069e9eb4d1230c6d55a3681e670d97493b6
 
 build:
   noarch: python
