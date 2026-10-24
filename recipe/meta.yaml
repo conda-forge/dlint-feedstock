@@ -1,5 +1,5 @@
 {% set name = "dlint" %}
-{% set version = "0.15.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,20 @@ package:
 
 source:
   url: https://github.com/dlint-py/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: a3d756bd98fef8c23c0eb46c393bf069e9eb4d1230c6d55a3681e670d97493b6
+  sha256: d693bfe5e28b7ffb9906f3133a00ca1eea1d46208a640fecb4e7e70944be7e9d
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - poetry-core
   run:
-    - flake8 >=3.6.0,<6.0.0
+    - flake8 >=3.6.0
     - python >={{ python_min }}
 
 test:
